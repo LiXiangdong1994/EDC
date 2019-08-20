@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>首页</title>
+	<meta charset="utf-8" />
+    <style>
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        td {
+            height: 35px;
+            padding-left: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+        }
+    </style>
+</head>
+<body style="background: #F3F3F3">
+    <div class="divbox" style="margin-left: 0px; margin-top: 0px; display: none;">
+        <input type="checkbox" class="int_check" id="check" disabled="disabled">启用
+        <input type="text" value="" class="name_input" disabled="disabled">
+        <input type="button" class="int_bc" value="保存">
+    </div>
+    <div class="system_status">
+        <table width="100%">
+            <tbody>
+                <tr> <td style="border: none;"> <h1 style="font-size: 18px;">系统当前状态</h1></td> </tr>
+                <tr> <td style="width: 200px;">设备当前时间：</td><td><span class="timeIdex">2019-08-19 11:42:41</span></td> </tr>
+                <tr> <td style="width: 200px;">GSM信号质量：</td><td><img src="../img/1.png" style="width: 50px;text-align: center;"></td><td id="adAlarm"><audio src="alarm.wav" controls="controls" autoplay="autoplay" hidden="hidden" loop="loop">浏览器不支持音频</audio></td> </tr>
+                <!--<tr> <td style='width: 200px;'>当前警告事件：</td><td><span class='length'></span>个告警事件</td> </tr>-->
+            </tbody>
+        </table>
+    </div>
+    <div class="append" style="background:url(../img/设计图.png);background-size: 100% 100%;background-repeat:no-repeat;position:absolute; width:100%; height:100%; z-index:-1">
+
+    </div>
+         <div class="tips" id="tips" style="display: none;"></div>
+    <!--<a href='javascript:history.back()' class='back' style='color: #fff'>返回</a>-->
+    
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>市电监测_属性</title>
+	<meta charset="utf-8" />
+
+    <style>
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        td {
+            height: 35px;
+            padding-left: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+        }
+
+        h1 {
+            color: #3A5A90;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .you_p {
+            background: cornflowerblue;
+            margin-left: 10px;
+            height: 30px;
+            color: #fff !important;
+            text-align: center;
+            line-height: 30px;
+            display: inline-block;
+            padding: 0 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            display: -moz-inline-stack;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .back {
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            display: block;
+            background: #00BFFF;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body style="background: #F3F3F3">
+    <div class="type256 empty" style=" margin 10px;">
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <td width="300px" style="text-align: center;"><img src="img/ico-elec.png" style="width: 60%;text-align: center;"></td>
+                    <td>
+                        <table width="100%">
+                            <tbody>
+                                <tr><td style="border: none"> <h1 class="smName">三相市电监测</h1></td></tr>
+                                <tr><td style="width: 100px;">SID:<span class="SID256">18</span></td><td style="width: 200px;">编址:<span class="Addr256">33</span></td><td>数据端口:<span class="Port256">1</span></td></tr>
+                                <tr><td style="width: 100px;">更新时间</td><td><span class="DateUpd256">2019-08-19 13:57:59</span></td><td></td></tr>
+                                <tr><td style="width: 100px;">监测项状态</td><td><span class="State256 ger">正常</span></td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table width="100%" style="margin-top: 30px">
+                            <tbody>
+                                <tr><td style="border: none"> <h1>电压(监测量)</h1></td></tr>
+                                <tr><td style="width: 33%">A相电压:<span class="Ady256">231V</span></td></tr>
+                                <tr><td>B相电压:<span class="Bdy256">232.5V</span></td></tr>
+                                <tr><td>c相电压:<span class="Cdy256">231.6V</span></td></tr>
+                            </tbody>
+                        </table>
+
+                        <table width="100%" style="margin-top: 10px">
+                            <tbody>
+                                <tr><td style="border: none"> <h1>电流(监测量)</h1></td></tr>
+                                <tr><td style="width: 33%">A相电流:<span class="Adl256">0A</span></td></tr>
+                                <tr><td>B相电流:<span class="Bdl256">0A</span></td></tr>
+                                <tr><td>C相电流:<span class="Cdl256">0.38A</span></td></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <table width="100%" style="margin-top: 0px">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div style="margin: 10px;margin-top: 15px; width:100%">
+                                            <span>选择查询日期:&nbsp;</span> <span>开始 <input type="text" id="date_1" value=""></span>
+                                            <span>结束 <input type="text" id="date_2" value=""></span>
+                                            <span><input type="button" class="dateBtn hide" value="实时查询">&nbsp;<input type="button" class="dateBtn1" value="历史查询"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="height:400px;">
+                                    <td>
+                                        <span class="lond hide" style="text-align: center; display: none;"><img src="img/loding.gif"><span>正在查询数据库....</span></span>
+                                        <div id="chartVol" style="height:47%;" data-highcharts-chart="18"><div class="highcharts-container" id="highcharts-72" style="position: relative; overflow: hidden; width: 960px; height: 187.516px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="960" height="187.516"><desc>Created with Highcharts 4.1.5</desc><defs><clipPath id="highcharts-73"><rect x="0" y="0" width="890" height="60"></rect></clipPath></defs><rect x="0" y="0" width="960" height="187" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 0 0" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 60 132.5 L 950 132.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="28.03125" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 28.03125 102)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="102">数值</text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-73)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-74)" style=""></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-73)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-74)" style=""></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-73)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-74)" style=""></g></g><text x="480" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:896px;" y="24">电压曲线</text><text x="480" text-anchor="middle" class="highcharts-subtitle" zIndex="4" style="color:#555555;fill:#555555;width:896px;" y="52"><tspan>单位 V</tspan></text><g class="highcharts-legend" zIndex="7" transform="translate(354,144)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#7cb5ec" stroke-width="2"></path><path fill="#7cb5ec" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2" y="15">A相电压</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(93.53125,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#434348" stroke-width="2"></path><path fill="#434348" d="M 8 7 L 12 11 8 15 4 11 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">B相电压</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(177.6875,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#90ed7d" stroke-width="2"></path><path fill="#90ed7d" d="M 4 7 L 12 7 12 15 4 15 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">C相电压</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:307px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="-9999">0</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" transform="translate(0,20)"></text></g></svg></div></div>
+                                        <br>
+                                        <div id="chartCur" style="height:47%;" data-highcharts-chart="19"><div class="highcharts-container" id="highcharts-76" style="position: relative; overflow: hidden; width: 960px; height: 187.516px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="960" height="187.516"><desc>Created with Highcharts 4.1.5</desc><defs><clipPath id="highcharts-77"><rect x="0" y="0" width="890" height="60"></rect></clipPath></defs><rect x="0" y="0" width="960" height="187" strokeWidth="0" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-grid" zIndex="1"></g><g class="highcharts-grid" zIndex="1"><path fill="none" d="M 0 0" stroke="#D8D8D8" stroke-width="1" zIndex="1" opacity="1"></path></g><g class="highcharts-axis" zIndex="2"><path fill="none" d="M 60 132.5 L 950 132.5" stroke="#C0D0E0" stroke-width="1" zIndex="7" visibility="visible"></path></g><g class="highcharts-axis" zIndex="2"><text x="28.03125" zIndex="7" text-anchor="middle" transform="translate(0,0) rotate(270 28.03125 102)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" visibility="visible" y="102">数值</text></g><g class="highcharts-series-group" zIndex="3"><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-77)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-78)" style=""></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-77)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-78)" style=""></g><g class="highcharts-series" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-77)"><path fill="none" d="M 0 0" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" zIndex="2" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-tracker" visibility="visible" zIndex="0.1" transform="translate(60,72) scale(1 1)" clip-path="url(#highcharts-78)" style=""></g></g><text x="480" text-anchor="middle" class="highcharts-title" zIndex="4" style="color:#333333;font-size:18px;fill:#333333;width:896px;" y="24">电流曲线</text><text x="480" text-anchor="middle" class="highcharts-subtitle" zIndex="4" style="color:#555555;fill:#555555;width:896px;" y="52"><tspan>单位 A</tspan></text><g class="highcharts-legend" zIndex="7" transform="translate(354,144)"><g zIndex="1"><g><g class="highcharts-legend-item" zIndex="1" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#7cb5ec" stroke-width="2"></path><path fill="#7cb5ec" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2" y="15">A相电流</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(93.53125,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#434348" stroke-width="2"></path><path fill="#434348" d="M 8 7 L 12 11 8 15 4 11 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">B相电流</text></g><g class="highcharts-legend-item" zIndex="1" transform="translate(177.6875,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#90ed7d" stroke-width="2"></path><path fill="#90ed7d" d="M 4 7 L 12 7 12 15 4 15 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" zIndex="2">C相电流</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels" zIndex="7"></g><g class="highcharts-axis-labels highcharts-yaxis-labels" zIndex="7"><text x="0" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:307px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="-9999">0</text></g><g class="highcharts-tooltip" zIndex="8" style="cursor:default;padding:0;white-space:nowrap;" transform="translate(0,-9999)"><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3 0 L 13 0 C 16 0 16 0 16 3 L 16 13 C 16 16 16 16 13 16 L 3 16 C 0 16 0 16 0 13 L 0 3 C 0 0 0 0 3 0"></path><text x="8" zIndex="1" style="font-size:12px;color:#333333;fill:#333333;" transform="translate(0,20)"></text></g></svg></div></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr></tr>
+            </tbody>
+        </table><table width="100%" style="margin-top:10px">
+            <tbody>
+                <tr><td style="border: none"> <h1>其它(监测量)</h1></td> </tr>
+                <tr><td style="width: 200px">总电能</td><td> 有功总电能:<span class="Ygzdn256">2120.44KWH</span></td></tr>
+                <tr><td style="width: 200px">有功功率</td><td> 总有功功率:<span class="Zyggl256">31W</span>,A相:<span class="Ayggl256">0W</span>,B相:<span class="Byggl256">0W</span>,C相<span class="Cyggl256">26W</span></td></tr>
+                <tr> <td style="width: 200px">无功功率</td><td> 总无功功率:<span class="Zwggl256">-93Var</span>,A相:<span class="Awggl256">0Var</span>,B相:<span class="Bwggl256">0Var</span>,C相:<span class="Cwggl256">0Var</span></td></tr>
+                <tr> <td style="width: 200px">视在功率</td><td> 总视在功率:<span class="Zszgl256">93VA</span>,A相:<span class="Aszgl256">0VA</span>,B相:<span class="Bszgl256">0VA</span>,C相:<span class="Cszgl256">0VA</span></td> </tr>
+                <tr> <td style="width: 200px">功率因数</td><td> 总功率因数:<span class="Zglys256">0.333</span>,A相:<span class="Aglys256">0</span>,B相:<span class="Bglys256">0</span>,C相:<span class="Cglys256">0</span></td> </tr>
+            </tbody>
+        </table>
+
+
+        <a href="javascript:history.back()" class="back" style="color: #fff">返回</a>
+    </div>
+
+</body>
+</html>

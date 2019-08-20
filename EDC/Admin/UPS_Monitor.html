@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        th {
+            height: 35px;
+            padding-left: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+        }
+
+        h1 {
+            color: #3A5A90;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .you_p {
+            background: cornflowerblue;
+            margin-left: 10px;
+            height: 30px;
+            color: #fff !important;
+            text-align: center;
+            line-height: 30px;
+            display: inline-block;
+            padding: 0 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            display: -moz-inline-stack;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .back {
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            display: block;
+            background: #00BFFF;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background: #F3F3F3">
+    <div class="append1"><a class="you_p" href="#" style="color: #fff">UPS监测</a></div>
+    <div class="append2"><div class="list2" style="margin: 10px;"><div style="border: #B0B7BF 1px solid">
+        <table width="100%">
+        <tbody>
+            <tr>
+                <th style="padding: 10px;background:#E5E9EC"></th>
+                <th style="padding: 10px;background:#E5E9EC"><span>监测项描述</span> </th>
+            <th style="padding: 10px;background:#E5E9EC"><span>传感器类型</span></th>
+            <th style="padding: 10px;background:#E5E9EC"><span>基本信息</span></th>
+            <th style="padding: 10px;background:#E5E9EC"><span>状态</span></th>
+            <th style="padding: 10px;background:#E5E9EC"><span>操作</span></th></tr>
+            <tr><th><img src="img/ico-ups-small.png" style="width: 40px;text-align: center;"></th>
+            <th>UPS监测</th><th style="text-align: left">UPS检测 (UPS OM-SANK)</th>
+            <th style="text-align: left">SID:<span>29</span>&nbsp;&nbsp;编址:<span>0</span>&nbsp;&nbsp;数据端口:<span>1</span>&nbsp;&nbsp;更新时间:<span class="LastUpd">2019-08-19 14:38:37</span>&nbsp;&nbsp;<br><span>输入电压:231.7V, 输出电压:0.6V, 输出负载:0%</span></th><th><span class="State ger">正常</span></th>
+            <th><a href="UPS_Detail.html" class="list_btn">详细</a> <a href="UPS_Attribute.html">属性</a></th>
+            </tr><tr><th><img src="img/ico-ups-small.png" style="width: 40px;text-align: center;"></th>
+            <th>UPS检测-60</th><th style="text-align: left">UPS检测 (UPS OM-SANK)</th>
+            <th style="text-align: left">SID:<span>60</span>&nbsp;&nbsp;编址:<span>0</span>&nbsp;&nbsp;数据端口:<span>0</span>&nbsp;&nbsp;更新时间:<span class="LastUpd">2019-08-19 14:38:41</span>&nbsp;&nbsp;<br><span>输入电压:0.0V, 输出电压:0.0V, 输出负载:0%</span></th>
+            <th><span class="State red">故障</span></th><th><a href="A3-768.asp?sid=60" class="list_btn">详细</a> <a href="C2-0.asp?sid=60&amp;itype=768">属性</a></th></tr><tr><th><img src="img/ico-ups-small.png" style="width: 40px;text-align: center;"></th><th>UPS检测-61</th><th style="text-align: left">UPS检测 (UPS-EMERSON)</th>
+            <th style="text-align: left">SID:<span>61</span>&nbsp;&nbsp;编址:<span>0</span>&nbsp;&nbsp;数据端口:<span>2</span>&nbsp;&nbsp;更新时间:<span class="LastUpd">2019-08-19 14:37:10</span>&nbsp;&nbsp;<br><span>输入电压:0.0V, 0.0V, 0.0V, 输出电压:0.0V, 0.0V, 0.0V, 输出电流:0.0A,0.0A,0.0A, 电池电压:0.0V</span></th>
+            <th><span class="State red">故障</span></th><th><a href="A3-769.asp?sid=61" class="list_btn">详细</a> <a href="C2-0.asp?sid=61&amp;itype=769">属性</a></th></tr><tr><th><img src="img/ico-ups-small.png" style="width: 40px;text-align: center;"></th><th>UPS检测-66</th><th style="text-align: left">UPS检测 (UPS OM-SANK)</th>
+            <th style="text-align: left">SID:<span>66</span>&nbsp;&nbsp;编址:<span>0</span>&nbsp;&nbsp;数据端口:<span>3</span>&nbsp;&nbsp;更新时间:<span class="LastUpd">2019-08-19 14:38:46</span>&nbsp;&nbsp;<br><span>输入电压:0.0V, 输出电压:0.0V, 输出负载:0%</span></th>
+            <th><span class="State red">故障</span></th>
+            <th><a href="A3-768.asp?sid=66" class="list_btn">详细</a> <a href="C2-0.asp?sid=66&amp;itype=768">属性</a></th>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        </div>
+    </div>
+    <a href="javascript:history.back()" class="back" style="color: #fff">返回</a>
+  
+
+</body>
+</html>

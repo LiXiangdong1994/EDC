@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+    <style>
+        table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 2px;
+            border-color: grey;
+        }
+
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        td {
+            height: 35px;
+            padding-left: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+            border-image: initial;
+        }
+
+        h1 {
+            color: #3A5A90;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .you_p {
+            background: cornflowerblue;
+            margin-left: 10px;
+            height: 30px;
+            color: #fff !important;
+            text-align: center;
+            line-height: 30px;
+            display: inline-block;
+            padding: 0 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            display: -moz-inline-stack;
+            zoom: 1;
+            *display: inline;
+        }
+
+        .back {
+            text-align: center;
+            width: 100px;
+            height: 30px;
+            margin: 0 auto;
+            display: block;
+            background: #00BFFF;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="background: #F3F3F3">
+    <div>
+        <div class="list2" style="margin: 5px;">
+            <a class="you_p" href="#" style="color: #fff">基本信息</a>&nbsp;&nbsp;<b><span id="anote">SID: 29 (UPS OM-SANK)</span></b>
+        </div>
+        <div class="setbase" style="border: #B0B7BF 1px solid">
+            <table width="100%">
+                <tbody>
+                    <tr><th><span>设备命名:</span></th><th style="text-align: left" id="tname">UPS监测</th></tr>
+                    <tr><th><span>通讯设置:</span></th><th style="text-align: left" id="tserdef">ttySP1:2400,n,8,1</th></tr>
+                    <tr><th><span>其  他:</span></th><th style="text-align: left" id="text1"></th></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="list2" style="margin: 5px;">
+            <a class="you_p" href="#" style="color: #fff">参数设置</a>
+        </div>
+        <div id="setparam" style="border: #B0B7BF 1px solid">
+        <table width="100%"><tbody><tr>
+            <th>输入电压</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(200)&nbsp;最小值|允许最低输入电压,低于此值告警</th>
+            <th>最大值|允许最高输入电压,超过此值告警</th></tr>
+            <tr>
+            <th>输入频率</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(49)&nbsp;最小值|允许最低输入频率,低于此值告警</th>
+            <th>最大值|允许最高输入频率,超过此值告警</th></tr><tr><th>输出电压</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;最小值|允许最低输出电压,低于此值告警</th>
+            <th>最大值|允许最高输出电压,超过此值告警</th></tr><tr><th>输出电流</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;最小值|允许最低输出电流,低于此值告警</th>
+            <th>最大值|允许最高输出电流,超过此值告警</th></tr><tr><th>输出频率</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(49)&nbsp;最小值|允许最低输出频率,低于此值告警</th>
+            <th>最大值|允许最高输出频率,超过此值告警</th></tr><tr><th>输出负载</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(200)&nbsp;最小值|允许最低输出负载,低于此值告警</th>
+            <th>最大值|允许最高输出负载,超过此值告警</th></tr><tr><th>b7市电异常</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示异常</th>
+            <th></th></tr><tr><th>b6电池低电压</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示低电压</th>
+            <th></th></tr><tr><th>b5旁路模式</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示旁路模式</th>
+            <th></th></tr><tr><th>b4 UPS故障</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示UPS故障</th>
+            <th></th></tr><tr><th>b3 UPS在线式</th>
+            <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示后备式,常为0</th>
+            <th></th>
+            </tr>
+            <tr>
+                <th>b2 UPS测试中</th>
+                <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示测试中</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>b1关机有效</th><th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示配置关机后有效</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th>b0蜂鸣</th>
+                <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(0)&nbsp;1表示蜂鸣响起</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>电池电压</th>
+                <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(200)&nbsp;最小值|允许最低电池电压,低于此值告警</th>
+                <th>最大值|允许最高电池电压,超过此值告警</th>
+            </tr>
+            <tr>
+            <th>电池容量</th>
+                <th style="text-align: left">不检测&nbsp;&nbsp;&nbsp;(30)&nbsp;最小值|允许最低容量,低于此值告警</th>
+                <th></th>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <div class="list2" style="margin: 5px;">
+            <a class="you_p" href="#" style="color: #fff">告警设置</a>&nbsp;&nbsp;&nbsp;<span id="aalm">AID:1 通用 声光告警</span>
+        </div>
+
+    </div>
+    <div>
+        <table width="100%">
+            <tbody>
+                <tr>
+                    <th><a href="javascript:history.back()" class="back" style="color: #fff">返回</a></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
